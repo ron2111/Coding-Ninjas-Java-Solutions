@@ -14,7 +14,7 @@ public class CheckRedundantBrackets {
 					stack.pop();
 				}
 				stack.pop();
-				if(count==0)
+				if(count==0||count==1)
 					return true;
 
 			}

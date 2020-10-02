@@ -1,9 +1,11 @@
 import java.util.HashMap;
-
+import java.util.Arrays;
 public class ArrayIntersection {
 	
 	//Best O(n)
 	public static void arrayIntersection(int[] arr1,int[] arr2) {
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
 		
 		HashMap<Integer, Integer> map=new HashMap<Integer, Integer>();
 		for(int i=0;i<arr1.length;i++) {

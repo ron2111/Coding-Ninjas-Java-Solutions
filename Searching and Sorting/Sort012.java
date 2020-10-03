@@ -22,9 +22,35 @@ public class Sort012 {
 			arr[i]=2;
 		}
 		
-		
 	}
 
+// class Solution {
+//     public void sortColors(int[] nums) {
+//        int low=0,mid=0,high=nums.length-1;
+//         while(mid<=high){
+            
+//             if(nums[mid]==0){
+//                 int temp=nums[low];
+//                 nums[low]=nums[mid];
+//                 nums[mid]=temp;
+//                 mid++;
+//                 low++;
+//             }
+//             else if(nums[mid]==1){
+//                 mid++;
+//             }
+//             // if(nums[mid]==2){
+//             else{
+//                 int temp=nums[high];
+//                 nums[high]=nums[mid];
+//                 nums[mid]=temp;
+//                 // mid++;
+//                 high--;
+//             }
+//         }
+        
+//     }
+// }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr=Array.takeInput();

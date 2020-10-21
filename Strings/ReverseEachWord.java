@@ -1,6 +1,25 @@
 
 public class ReverseEachWord {
 	
+	public static String reverseEachWordBetter(String input) {
+		// Write your code here
+        input+=" ";
+        String out="";
+        String s = "";
+        for(int i=0;i<input.length();i++){
+            if(input.charAt(i) == ' '){
+                
+                out+= s+" ";
+                s="";
+            }
+            else{
+                s =  input.charAt(i)+ s;
+            }
+        }
+		return out;
+	}
+	
+	
 	public static String reverseEachWord(String str) {
 		
 		String x="";

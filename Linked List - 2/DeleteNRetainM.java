@@ -6,6 +6,10 @@ public class DeleteNRetainM {
 		 if(m==0) {
 	            return null;
 	        }
+		if (n==0)
+		{
+			return head;
+		}
 	        LinkedListNode<Integer> orginal=head;
 	        LinkedListNode<Integer> temp1=head,temp2=head;
 	        while(head!=null) {

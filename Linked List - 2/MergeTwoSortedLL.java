@@ -5,6 +5,13 @@ public class MergeTwoSortedLL {
 		
 		LinkedListNode<Integer> head=null,tail=null;
 		
+	        if(head1==null) {
+		 return head2;
+		}
+		if(head2==null) {
+			return head1;
+		}
+		
 		while(head1!=null && head2!=null) {
 			
 			if(head1.data<=head2.data) {
